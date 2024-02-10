@@ -1,0 +1,25 @@
+<div class="col-8 offset-2">
+  <div class="card shadow p-4">
+    <h2>LOGIN</h2>
+    <form (ngSubmit)="login(f)"  #f="ngForm"  >
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input name="email" ngModel  autocomplete="none" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce tu correo">
+        <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tus datos</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input name="password" ngModel type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña mamalona">
+      </div>
+      <div class="col text-end">
+        <button type="submit" class="mt-4 mb-2 fs-4 btn btn-primary">Registrarme</button>
+      </div>
+
+    </form>
+    <div class="col text-center">
+      <button (click)="loginGoogle()" class="mt-4 mb-2 fs-4 btn btn-info">Google</button>
+    </div>
+  </div>
+</div>
+
+
